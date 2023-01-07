@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bye Car</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <header>
+      <img src="./assets/dnc-logo.png" alt="dnc-logo" />
+      <h1>ByeCar</h1>
+    </header>
+
+    <section>
+      <!-- ===== LEFT-CONTENT ===== -->
+      <div class="left-content">
+        <h2>Ter <b>uma moto</b> por assinatura nunca foi tão fácil!</h2>
+        <img src="./assets/left-img.png" alt="girl in motocicle" />
+      </div>
+
+      <!-- ===== RIGHT-CONTENT ===== -->
+      <div class="right-content">
+        <h2>Conheça nossas <span>motos</span>!</h2>
+        <!-- ===== CAROUSEL ===== -->
+        <div class="carousel">
+          <button onclick="show(-1)">
+            <img src="./assets/left-arrow.png" alt="left arrow" id="leftArrow"/>
+          </button>
+          <ul class="carousel-cards">
+            <li>
+              <h2>Scooter Elétrica Voltz EV1</h2>
+              <img src="./assets/img-card-1.png" alt="" />
+              <div class="card-label">
+                <h1>A partir de</h1>
+                <span>R$ 619,90</span>
+                <h3>Plano de 30 meses</h3>
+              </div>
+            </li>
+            <li>
+              <h2>Honda CB 500X</h2>
+              <img src="./assets/img-card-2.png" alt="" />
+              <div class="card-label">
+                <h1>A partir de</h1>
+                <span>R$ 890,90</span>
+                <h3>Plano de 12 meses</h3>
+              </div>
+            </li>
+          </ul>
+          <button onclick="show(+1)">
+            <img src="./assets/right-arrow.png" alt="right arrow" id="rightArrow"/>
+          </button>
+        </div>
+
+        <button class="learn-more" >Saiba mais</button>
+      </div>
+
+      <!-- ===== MODAL ===== -->
+
+      
+    </section>
+
+    
+    <div class="modal" id="modal"></div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
